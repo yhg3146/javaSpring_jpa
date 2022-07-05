@@ -1,0 +1,10 @@
+package ch02;
+
+public class EqualTest {
+
+	public static void main(String[] args) {
+			Student std1 = new Student();
+			Student std2 = new Student();
+	}
+
+}

@@ -1,0 +1,16 @@
+package ch18;
+
+import java.io.RandomAccessFile;
+
+public class RandomAccessFileTest {
+
+	public static void main(String[] args) {
+
+		RandomAccessFile rf = new RandomAccessFile("random.txt","rw");
+		
+		rf.writeInt(100);
+		rf.writeDouble(3.14);
+		rf.writeUTF("안녕하세요");
+	}
+
+}

@@ -1,0 +1,7 @@
+package ch19;
+
+public class Car {
+	static int carnum=10000;
+	private int carid;
+
+}

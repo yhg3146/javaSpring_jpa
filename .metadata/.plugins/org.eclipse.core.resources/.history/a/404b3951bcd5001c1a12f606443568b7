@@ -1,0 +1,6 @@
+package ch19;
+
+public class Car {
+	static carnum=10000;
+
+}

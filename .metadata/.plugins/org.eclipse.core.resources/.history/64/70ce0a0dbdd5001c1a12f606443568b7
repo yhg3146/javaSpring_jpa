@@ -1,0 +1,10 @@
+package ch19;
+
+public class CarFactory {
+	
+	
+	private CarFactory() {
+		
+	}
+
+}

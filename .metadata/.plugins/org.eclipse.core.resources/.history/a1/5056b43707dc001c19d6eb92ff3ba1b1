@@ -1,0 +1,10 @@
+package ch18;
+
+public class RandomAccessFileTest {
+
+	public static void main(String[] args) {
+
+		RandomAccessFile rf = new RandomAccessFile("random.txt","rw");
+	}
+
+}

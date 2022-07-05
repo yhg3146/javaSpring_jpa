@@ -1,0 +1,13 @@
+package ch07;
+
+public class TravelCustomerTest {
+
+	public static void main(String[] args) {
+		TravelCustomer customerLee = new TravelCustomer("이순신",40,100);
+		TravelCustomer customerKim = new TravelCustomer("김유신",20,100);
+		TravelCustomer customerHong = new TravelCustomer("홍실동",13,50);
+
+
+	}
+
+}

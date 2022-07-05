@@ -1,0 +1,58 @@
+plugins {
+	id 'org.springframework.boot' version '2.7.0'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+	id 'jacoco'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+configurations {
+	CompileOnly{
+		extendsFrom annotationProcessor
+	}
+}
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-aop'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+
+
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+	testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+
+	// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+	implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.12.1'
+
+	annotationProcessor("org.projectlombok:lombok")
+	compileOnly("org.projectlombok:lombok")
+
+	// https://mvnrepository.com/artifact/org.mockito/mockito-core
+	testImplementation group: 'org.mockito', name: 'mockito-core', version: '4.6.1'
+
+	// https://mvnrepository.com/artifact/org.mockito/mockito-junit-jupiter
+	testImplementation group: 'org.mockito', name: 'mockito-junit-jupiter', version: '4.6.1'
+
+
+	// https://mvnrepository.com/artifact/io.springfox/springfox-boot-starter
+	// 그냥 실행 시키면 작동안됨
+	// 1. main 함수에 @EnableWebMvc 어노테이션 추가
+	// 2. web 접속 시,
+//	implementation 'io.springfox:springfox-boot-starter:3.0.0'
+
+
+
+
+
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

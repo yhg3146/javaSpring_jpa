@@ -1,0 +1,26 @@
+package ch02;
+
+public class EqualTest {
+
+	public static void main(String[] args) {
+			Student std1 = new Student(100,"Lee");
+			Student std2 = new Student(100,"Lee");
+			Student std3 =std1;
+	
+			System.out.println(std1==std2);
+			System.out.println(std1.equals(std2));
+			
+			
+			System.out.println(std1.hashCode());
+			System.out.println(std2.hashCode());
+			
+			String str1 = new String("abc");
+			String str2 = new String("abc");
+			System.out.println(std1.hashCode());
+			System.out.println(std2.hashCode());
+			
+	
+	
+	}
+
+}

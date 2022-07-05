@@ -1,0 +1,15 @@
+package ch19;
+
+public class CarFactory {
+	
+	private static CarFactory insance = new CarFactory();
+	
+	private CarFactory() {
+		
+	}
+	
+	private static getInstance() {
+		return 
+	}
+
+}
